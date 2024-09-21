@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+  --primary: #FFAA00;
+  --primary-darker: #dd9600;
+  --primary-dark: #c38500;
+}
+
+::selection {
+  background: rgba(255, 170, 0, 0.38);
+}
+
+::-moz-selection {
+  background: rgba(255, 170, 0, 0.38);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  font-size: 18px;
+}
+
+h1{
+  font-size: 72px;
+  line-height: 1;
+}
+
+h2{
+  font-size: 52px;
+  line-height: 1;
+}
+
+h3{
+  font-size: 36px;
+  line-height: 1;
+}
+
+h4{
+  font-size: 24px;
+  line-height: 1;
+}
+
+.container{
+  width: 1320px;
+  margin: auto;
+}
+
+/** Navbar **/
+
+nav{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding: 1.325rem;
+  z-index: 999;
+}
+
+nav h3{
+  font-size: 24px;
+  font-weight: 1000;
+  line-height: 1;
+}
+
+nav .nav-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-list{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.merger{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/** Section 1 **/
+
+#section-1{
+  position: relative;
+  padding-top: 70px;
+  width: 100%;
+}
+
+#section-1 .section-flexbox{
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 8rem 1.325rem;
+  z-index: 1;
+}
+
+#section-1 .section-content{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+#section-1 .section-content h1{
+  font-weight: 800;
+}
+
+#section-1 .section-content p{
+  color: #1E272F;
+  font-weight: 400;
+}
+
+#section-1 .section-content button{
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  padding: 16px 40px;
+  transition: .15s;
+}
+
+#section-1 .section-content button:hover{
+  cursor: pointer;
+  background-color: var(--primary-darker);
+}
+
+#section-1 .section-content button:active{
+  background-color: var(--primary-dark);
+}
+
+#section-1 .circle-image{
+  position: absolute;
+  top: 47px;
+  left: 42px;
+  user-select: none;
+}
+
+#section-1 .circle-border{
+  user-select: none;
+}
+
+#section-1 .blob-svg{
+  position: absolute;
+  top: 10rem;
+  z-index: 0
+}
+
