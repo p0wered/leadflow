@@ -8,17 +8,48 @@
     .container{
         width: 960px;
     }
+    #section-7 .contacts-flexbox{
+        flex-direction: column;
+    }
+    #section-7 .desc{
+        margin-bottom: 2rem;
+    }
+    #section-7 .contacts-grid-item{
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
     .container{
         width: 720px;
     }
-    #section-1 .section-flexbox{
-        flex-direction: column;
+    nav{
+        border-bottom: 1px solid #e8e8e8;
     }
     nav .nav-list{
         display: none;
+    }
+    nav .hamburger-container{
+        display: inline;
+    }
+    .mobile-menu{
+        display: flex;
+    }
+    #section-1 .section-flexbox{
+        flex-direction: column;
+        padding: 4rem 1.325rem 0 1.325rem;
+    }
+    #section-2 .section-flexbox .contact-form{
+        box-shadow: none;
+        border: none;
+    }
+    #section-5 .step-list{
+        flex-direction: column;
+        gap: 4rem;
+        padding: 0 2rem;
+    }
+    #section-5 .step-merger{
+        max-width: 100%;
     }
 }
 
@@ -33,5 +64,33 @@
     #section-1 .circle-border{
         width: 391px;
         height: 391px;
+    }
+    #section-3 {
+        padding: 4rem 0;
+    }
+    #section-3 .vacancy-list {
+        gap: 1rem;
+    }
+    #section-3 .vacancy-card {
+        width: auto;
+        margin: 0 1rem;
+    }
+    #section-3 .vacancy-card img {
+        width: 100%;
+    }
+    #section-4{
+        padding: 3rem 0;
+    }
+    #section-4 .decor{
+        display: none;
+    }
+    #section-5 .title h2{
+        width: min-content;
+    }
+    #section-6{
+        padding: 2rem 1rem;
+    }
+    #section-7 {
+        padding: 4rem 1rem;
     }
 }
